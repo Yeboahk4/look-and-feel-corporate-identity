@@ -1,0 +1,22 @@
+/* We gebruiken hier Cascade layers, wat mogelijke problemen met Specificiteit voorkomt
+   https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
+   https://css-tricks.com/css-cascade-layers/ */
+
+@layer styleguide {
+    :root {
+        /* PODCAST COLOR */
+    }
+
+    /* Schrijf hier de verschillende stijlen, die
+
+    /* Kleuren */
+    .color-example {
+        background-color: #bada55;
+    }
+
+    /* Typografie */
+
+
+    /* Formulier elementen */
+
+}
