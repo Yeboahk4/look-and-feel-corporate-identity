@@ -5,13 +5,24 @@
 @layer styleguide {
     :root {
         /* PODCAST COLOR */
+        --podcast-color-darkest: hsl(var(--podcast-primary-color-h-s), 30%);
+        --podcast-color-lightest: hsl(var(--podcast-primary-color-h-s), 70%);
     }
 
     /* Schrijf hier de verschillende stijlen, die
 
     /* Kleuren */
-    .color-example {
-        background-color: #bada55;
+    .podcast-color-darkest {
+        background-color: var(--podcast-color-darkest);
+    }
+    .podcast-color-dark {
+        background-color: var(--podcast-color-dark);
+    }
+    .podcast-color-light {
+        background-color: var(--podcast-color-light);
+    }
+    .podcast-color-lightest {
+        background-color: var(--podcast-color-lightest);
     }
 
     /* Typografie */
