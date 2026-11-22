@@ -7,6 +7,10 @@
         /* PODCAST COLOR */
         --podcast-color-darkest: hsl(var(--podcast-primary-color-h-s), 30%);
         --podcast-color-lightest: hsl(var(--podcast-primary-color-h-s), 70%);
+
+        /* PODCAST TYPOGRAFIE */
+        --podcast-header-font: 'Playfair , serif';
+        --podcast-primary-font:  Montserrat, sans-serif;
     }
 
     /* Schrijf hier de verschillende stijlen, die
@@ -26,7 +30,16 @@
     }
 
     /* Typografie */
-
+    body {
+        font-family: var(--podcast-primary-font);
+    }
+    h1 {
+        font-family: var(--podcast-header-font);
+        background-color: var(--podcast-primary-color);
+    }
+    p, figcaption {
+        font-family: var(--podcast-primary-font);
+    }
 
     /* Formulier elementen */
 

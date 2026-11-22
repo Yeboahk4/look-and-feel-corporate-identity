@@ -22,7 +22,7 @@
         /* BASE COLORS */
         --primary-color-h-s: 218, 100%;
         --secondary-color-h-s: 0, 0%;
-        --podcast-primary-color-h-s: 50, 100%;
+        --podcast-primary-color-h-s: 49.61, 100%;
         --column-primary-color-h-s: 14, 97%;
         --footer-primary-color-h-s: 0, 0%;
 
@@ -37,9 +37,9 @@
         /* Het heeft al een 100% lightness dus lichter dan dit kan niet */
 
         /* PODCAST COLOR */
-        --podcast-color-dark: hsl(var(--podcast-primary-color-h-s), 40%);
-        --podcast-color-neutral: hsl(var(--podcast-primary-color-h-s), 50%);
-        --podcast-color-light: hsl(var(--podcast-primary-color-h-s), 60%);
+        --podcast-color-dark: hsl(var(--podcast-primary-color-h-s), 39.8%);
+        --podcast-color-neutral: hsl(var(--podcast-primary-color-h-s), 49.8%);
+        --podcast-color-light: hsl(var(--podcast-primary-color-h-s), 59.8%);
        
         /* COLUMN COLOR */
         --column-color-dark: hsl(var(--column-primary-color-h-s), 43%);
@@ -63,6 +63,7 @@
         --font-size-smallest: 16px;
         --primary-font: Montserrat, 'Times New Roman';
         --secondary-font: Georgia, 'Times New Roman'; 
+        --font-textshadow: 2px 2px #000;
 
         /*formulieren*/
 
@@ -75,12 +76,9 @@
 
     /* Kleuren */
 
-    body {
-        background-color: var(--primary-color);
-    }
 
     .background-color {
-        background-color: #ffff;
+        background-color: #e7ddb5ad;
     }
     .primary-color {
         background-color: var(--primary-color-neutral);
