@@ -1,237 +1,164 @@
 <!DOCTYPE html>
-<html lang="nl">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hvana Podcast - Styleguide</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="styleguide-hvana.css">
-    <link rel="stylesheet" href="styleguide.css">
-  </head>
-  <body>
+    <title>Luister - HvanA</title>
 
-    <header>
-      <h1>Hvana Podcast - Styleguide</h1>
-      <p>Dit is de styleguide voor het project [Projectnaam]. Hierin zijn een aantal huisstijl onderdelen gedefinieerd.</p>
-      <p>Gebruik de volgende gedeelde stylesheet binnen je eigen project:
-        <!-- Pas deze aan zodra deze repository live staat op GitHub Pages -->
-        <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://....github.io/.../styleguide.css&quot;&gt;</code>
-      </p>
+    <!-- <link rel="stylesheet" href="https://yeboahk4.github.io/look-and-feel-styleguide/">
+    <link rel="stylesheet" href="styles/styleguide.css"> -->
+    <link rel="stylesheet" href="styles/podcast.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="hero">
+        <nav class="mobile_menu">
+            <ul>
+                <li><a href="">NIEUWS</a></li>
+                <li><a href="">VIDEO</a></li>
+                <li><a href="">COLUMNS</a></li>
+                <li><a href="">OPINIE</a></li>
+                <li><a href="index.html">PODCAST</a></li>
+            </ul>
+        </nav>
+        <div class="topsection_header">
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="main_navbar">
+                <li><a href="">NIEUWS</a></li>
+                <li><a href="">VIDEO</a></li>
+                <li><a href="">COLUMNS</a></li>
+                <li><a href="">OPINIE</a></li>
+                <li><a href="index.html">PODCAST</a></li>
+            </ul>
+            <nav class="hvana_logo">
+                <a href="index.html">HVANA</a>
+            </nav>
+            <ul class="sm_navbar">
+            <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="hero-content">
+          <h1>LUISTER</h1>
+          <p>De verhalen van de HvA - elke week nieuwe afleveringen.</p>
+          <a href="#recent" class="cta">Ontdek de nieuwste afleveringen</a>
+
+        </div>
     </header>
-
-    <nav>
-      <a href="#kleur">Kleuren</a>
-      <a href="#typografie">Typografie</a>
-      <a href="#formulieren">Formulier elementen</a>
-      <!-- En eventueel meer categorieën en componenten -->
-    </nav>
-
-
-    <section id="kleur">
-
-      <h2>Podcast kleuren</h2>
-      <p>Bij het onderdeel kleuren staat het kleurgebruik.</p>
-
-      <p>Podcast kleuren (Darkest > Lightest)</p>
-      <figure>
-        <code class="podcast-color-darkest">#997F00</code>
-        <figcaption>Darkest Color</figcaption>
-      </figure>
-      <figure>
-        <code class="podcast-color-dark">#CBA800</code>
-        <figcaption>Dark Color</figcaption>
-      </figure>
-      <figure>
-        <code class="podcast-color">#FED200</code>
-        <figcaption>Neutral/Primary Color</figcaption>
-      </figure>
-      <figure>
-        <code class="podcast-color-light">#FFDB32</code>
-        <figcaption>Light Color</figcaption>
-      </figure>
-      <figure>
-        <code class="podcast-color-lightest">#FFE556</code>
-        <figcaption>Lightest Color</figcaption>
-      </figure>
-
-    </section>
-
-
-    <section id="typografie">
-
-      <h2>Typografie</h2>
-      <p>Bij het onderdeel typografie worden fonts en groottes gedemonstreerd.</p>
-
-      <h1 class="">'Playfair , serif'</h1>
-      <h2 class="">Montserrat, sans-serif</h2>
-      <h3 class="">Montserrat, sans-serif</h3>
-      <h4 class="">Montserrat, sans-serif</h4>
-      <h5 class="">Montserrat, sans-serif</h5>
-      <h6 class="">Montserrat, sans-serif</h6>
-
-      <p class="">Simpele alinea's</p>
-      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      <ul class="">
-        <li>Ongeordende lijsten met items</li>
-        <li>Met nog meer items</li>
-        <li>En nog een item</li>
-      </ul>
-
-      <ol class="">
-        <li>Geordende lijsten met items</li>
-        <li>Met nog meer items</li>
-        <li>En nog een item</li>
-      </ol>
-
-      <!--<table class="">
-        <thead>
-          <tr>
-            <th>Tabelkop</th>
-            <th>Tabelkop</th>
-            <th>Tabelkop</th>
-            <th>Tabelkop</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-          </tr>
-          <tr>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-          </tr>
-          <tr>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-          </tr>
-          <tr>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-          </tr>
-          <tr>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-            <td>Tabeldata</td>
-          </tr>
-        </tbody>
-      </table>-->
-
-      <blockquote class="">
-        <p>Dit is een quote, met een specifieke styling. Standaard wordt deze ingesprongen door de browser. Maar waarschijnlijk zien quotes er bij jullie anders uit.</p>
-      </blockquote>
-
-    </section>
-
-
-    <section id="formulieren">
-
-      <h2>Formulier elementen</h2>
-      <p>Bij het onderdeel formulier elementen worden input, radio, checkbox en buttons gedemonstreerd.</p>
-
-      <form class="">
-
-        <p>
-          <label class="">
-            Text: 
-            <input type="text" class="">
-          </label>
-        </p>
-
-        <p>
-          <label class="">
-            Textarea: 
-            <textarea class=""></textarea>
-          </label>
-        </p>
-
-        <fieldset>
-          <legend class="">Radio options:</legend>
-
-          <label class="">
-            <input type="radio" name="radio-options" value="option 1" checked class="">
-            Option 1
-          </label>
-
-          <label class="">
-            <input type="radio" name="radio-options" value="option 2" class="">
-            Option 2
-          </label>
-
-          <label class="">
-            <input type="radio" name="radio-options" value="option 3" class="">
-            Option 3
-          </label>
-        </fieldset>
-        
-        <fieldset>
-          <legend class="">Checkbox</legend>
-
-          <label class="">
-            <input type="checkbox" name="checkbox-1" checked class="">
-            Checkbox 1
-          </label>
-
-          <label class="">
-            <input type="checkbox" name="checkbox-2" class="">
-            Checkbox 2
-          </label>
-
-          <label class="">
-            <input type="checkbox" name="chekcbox-3" class="">
-            Checkbox 3
-          </label>
-        </fieldset>
-
-        <p>
-          <label class="">
-            Search: 
-            <input type="search" class="">
-          </label>
-        </p>
-        
-        <p>
-          <label class="">
-            Tel: 
-            <input type="tel" class="">
-          </label>
-        </p>
-
-        <p>
-          <label class="">
-            Range: 
-            <input type="range" class="">
-          </label>
-        </p>
-
-        <p>
-          <input type="submit" value="Submit button" class="">
-        </p>
-
-        <p>
-          <button type="button" class="">Button</button>
-        </p>
-      </form>
     
+    <section class="featured">
+        <div class="featured-image"></div>
+
+        <div class="featured-info">
+            <h2>Uitgelichte aflevering</h2>
+            <h3>Hoe studenten omgaan met prestatiedruk</h3>
+            <p>In deze aflevering duiken we in het leven van HvA-studenten en praten we over stress, balans en motivatie.</p>
+            <button class="play-btn">▶ Luister nu</button>
+        </div>
     </section>
 
+    <section class="filters">
+        <button class="filter active">Nieuwste</button>
+        <button class="filter">Populair</button>
+        <button class="filter">Onderwijs</button>
+        <button class="filter">Studentenleven</button>
+        <button class="filter">Wetenschap</button>
+    </section>
 
-    <!-- En eventueel meer categorieën en componenten -->
+    <section id="recent" class="podcast-grid">
+        <article class="podcast-card">
+            <img src="assets/template_podcast1.jpg" alt="Podcast 1">
+                <div class="info">
+                    <h3>Aflevering 1: Hoe komt de HvA los van big tech?</h3>
+                    <p>21 min • Wetenschap</p>
+                </div>
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+        </article>
 
-  </body>
+        <article class="podcast-card">
+            <img src="assets/template_podcast2.jpg" alt="Podcast 2">
+                <div class="info">
+                    <h3>Aflevering 2: Wie beschermt studenten op de huurmarkt?</h3>
+                    <p>28 min • Studentenleven</p>
+                </div>
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+        </article>
+
+        <article class="podcast-card">
+            <img src="assets/template_podcast3.jpg" alt="Podcast 3">
+                <div class="info">
+                    <h3>Aflevering 3: Hoe werkt AI?</h3>
+                    <p>41 min • Wetenschap</p>
+                </div>
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+        </article>
+    </section>
+
+     <section class="hvana-signup">
+  <div class="signup-container">
+
+    <div class="signup-social">
+      <h3>Volg HvanA</h3>
+      <ul>
+        <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="signup-form">
+      <h3>Blijf op de hoogte</h3>
+      <p>Mis geen updates!</p>
+
+      <form>
+        <input type="email" id="email" placeholder="E-mailadres" required>
+        <button type="submit">Aanmelden</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+    <footer class="hvana-footer">
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                <a href="">HVANA</a>
+            </div>
+
+            <ul class="footer-nav">
+                <li><a href="">NIEUWS</a></li>
+                <li><a href="">VIDEO</a></li>
+                <li><a href="">COLUMNS</a></li>
+                <li><a href="">OPINIE</a></li>
+                <li><a href="">PODCAST</a></li>
+            </ul>
+
+            <ul class="footer-social">
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 HvanA – Alle rechten voorbehouden</p>
+        </div>
+
+    </footer>
+</body>
+  <script src="scripts/script.js"></script>
 </html>

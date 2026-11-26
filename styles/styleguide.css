@@ -42,5 +42,19 @@
     }
 
     /* Formulier elementen */
-
+    form button {
+        padding: 12px 24px;
+        background-color: #FED200;
+        border: none;
+        border-radius: 6px;
+        font-weight: 900;
+        cursor: pointer;
+        transition: background 0.3 ease;
+    }
+    .form-email {
+        padding: 12px;
+        border-radius: 6px;
+        border: 1px solid black;
+        font-size: 16px;
+    }
 }
