@@ -27,7 +27,7 @@ body {
     }
 }
 /*===== TOP NAVBAR =====*/
-.topsection_header {
+.topsection-header {
     display: grid;
     grid-template-columns: 1fr;
     padding: 15px 20px;
@@ -44,16 +44,16 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-.topsection_header.scrolled {
+.topsection-header.scrolled {
   background-color: #ffffff;
   transition: background-color 0.3s ease;
 }
-.topsection_header.scrolled a, .topsection_header.scrolled i {
+.topsection-header.scrolled a, .topsection-header.scrolled i {
   color: #FED200;
   text-shadow: none;
 }
 
-.main_navbar {
+.main-navbar {
     display: none;
     
     @media (min-width: 768px) {
@@ -79,7 +79,7 @@ body {
         }
     }
 }
-.hvana_logo a {
+.hvana-logo a {
     display: flex;
     justify-content: center;
     font-size: 28px;
@@ -91,7 +91,7 @@ body {
         font-size: 32px;
     }
 }
-.sm_navbar {
+.sm-navbar {
     display: none;
 
     @media (min-width: 768px) {
@@ -148,11 +148,11 @@ body {
 .hamburger.active span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
-.topsection_header.scrolled .hamburger span {
+.topsection-header.scrolled .hamburger span {
   background-color: #FED200;
 }
 
-.mobile_menu {
+.mobile-menu {
     background-color: #FED200;
     position: fixed;
     top: 0;
@@ -181,7 +181,7 @@ body {
     }
 
 }
-.mobile_menu.open {
+.mobile-menu.open {
     right: 0;
 }
 
